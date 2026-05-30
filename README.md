@@ -10,7 +10,7 @@
 
 *Obs 2: Scraping the H&M website is allowed according to H&M's robots.txt file.*
 
-*The in-depth Python code explanation is available in [this](https://github.com/brunodifranco/project-star-jeans-data-engineering/blob/main/star-jeans.ipynb) Jupyter Notebook.*
+*The in-depth Python code explanation is available in [this](https://github.com/NitinTiwari1305/-project-star-jeans-data-engineering/blob/main/star-jeans.ipynb) Jupyter Notebook.*
 
 # 1. **Star Jeans and Business Problem**
 <p align="justify"> Michael, Franklin and Trevor, after several successful businesses, are starting new a company called Star Jeans. For now, their plan is to enter the USA fashion market through an E-commerce. The initial idea is to sell one product for a specific audience, which is <b>male jeans</b>. Their goal is to keep prices low and slowly increase them, as they get new clients. However, this market already has strong competitors, such as H&M for instance. In addition to that, the three businessmen aren't familiar with this segment in particular. Therefore, in order to better understand how this market works they hired a Data Science/Engineering freelancer to gather information regarding H&M. They want to know the following information about H&M male jeans: </p>
@@ -29,13 +29,13 @@
 
 - <b> Understanding the Business Problem</b>: Understanding the main objective we are trying to achieve and plan the solution to it. 
 
-- <b> Extraction </b>: Scraping product_id and product_type in showroom page (Job 01); getting other attributes from each product and saving it all in Pandas DataFrame (Job 02). More information in <a href="https://github.com/brunodifranco/project-star-jeans-data-engineering#3-extraction">Section 3</a>.</p>
+- <b> Extraction </b>: Scraping product_id and product_type in showroom page (Job 01); getting other attributes from each product and saving it all in Pandas DataFrame (Job 02). More information in <a href="https://github.com/NitinTiwari1305/-project-star-jeans-data-engineering#3-extraction">Section 3</a>.</p>
 
-- <b> Transformation </b>: Data Cleaning (Job 03). More information in <a href="https://github.com/brunodifranco/project-star-jeans-data-engineering#4-transformation">Section 4</a>.</p>
+- <b> Transformation </b>: Data Cleaning (Job 03). More information in <a href="https://github.com/NitinTiwari1305/-project-star-jeans-data-engineering#4-transformation">Section 4</a>.</p>
 
-- <b> Loading </b>: Inserting data in a PostgreSQL Database (Job 04). More information in <a href="https://github.com/brunodifranco/project-star-jeans-data-engineering#5-loading">Section 5</a>.</p>
+- <b> Loading </b>: Inserting data in a PostgreSQL Database (Job 04). More information in <a href="https://github.com/NitinTiwari1305/-project-star-jeans-data-engineering#5-loading">Section 5</a>.</p>
 
-- <b> Streamlit App </b>: Loading Database in the Streamlit App (Job 05); displaying data and adding filters in the Streamlit App (Job 06). More information in <a href="https://github.com/brunodifranco/project-star-jeans-data-engineering#6-streamlit-app">Section 6</a>.</p>
+- <b> Streamlit App </b>: Loading Database in the Streamlit App (Job 05); displaying data and adding filters in the Streamlit App (Job 06). More information in <a href="https://github.com/NitinTiwari1305/-project-star-jeans-data-engineering#6-streamlit-app">Section 6</a>.</p>
 
 [Here](https://docs.google.com/spreadsheets/d/1ipHa7oxNVYF1zpFfDz5yG63RP0GvpRLFOzBozBHIdRA/edit?usp=sharing) you can find the full ETL documentation, and below there's an illustration showing the complete ETL process and dynamic: 
 
@@ -43,7 +43,7 @@
   <img src="https://user-images.githubusercontent.com/66283452/208748904-f7ada2f7-8ced-4bbd-a473-85102fab9c5e.png"/>
 </p>
 
-<p align="justify"> All jobs are performed sequentially. Jobs 01-04 are being run by <a href="https://github.com/brunodifranco/project-star-jeans-data-engineering/blob/main/star-jeans-etl/webscraping-hm.py">this</a> script, while the Streamlit App (Jobs 05 and 06) is built by <a href="https://github.com/brunodifranco/project-star-jeans-data-engineering/blob/main/star-jeans-etl/streamlit-app/star-jeans-app.py">this</a> script. Jobs 01-04 are scheduled to run on a weekly basis via Windows Task Scheduler, which makes the Streamlit App (Jobs 05 an 06) also updates in the same period frequency, since Job 05 loads the Database in Streamlit, after it's been processed by the ETL. </p>
+<p align="justify"> All jobs are performed sequentially. Jobs 01-04 are being run by <a href=https://github.com/NitinTiwari1305/-project-star-jeans-data-engineering/blob/main/star-jeans-etl/webscraping-hm.py">this</a> script, while the Streamlit App (Jobs 05 and 06) is built by <a href="https://github.com/NitinTiwari1305/-project-star-jeans-data-engineering/blob/main/star-jeans-etl/streamlit-app/star-jeans-app.py">this</a> script. Jobs 01-04 are scheduled to run on a weekly basis via Windows Task Scheduler, which makes the Streamlit App (Jobs 05 an 06) also updates in the same period frequency, since Job 05 loads the Database in Streamlit, after it's been processed by the ETL. </p>
 
 ## 2.2. Tools and techniques used:
 - [Python 3.10.8](https://www.python.org/downloads/release/python-3108/), [Pandas](https://pandas.pydata.org/) and [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/).
@@ -119,5 +119,5 @@ In this project the main objective was accomplished:
 
 # Contact
 
-- brunodifranco99@gmail.com
-- [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/BrunoDiFrancoAlbuquerque/)
+- nitintiwari1305@gmail.com.com
+- [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nitintiwari1305/)
